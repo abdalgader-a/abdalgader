@@ -31,7 +31,7 @@ menu:
 
 
 params:
-    description: "Welcome to my webpage! I am a lecturer of mathematics and computer sciences at the Faculty of Mathematical Sciences and Informatics, University of Khartoum. Previously, I worked as an AI resident at Meta AI, where I was a member of the Modern Recommendation System team under supervision of Dr. Vassilis Plachouras. Prior to that, I collaborated as an AI research associate with LIVIA, École de technologie supérieure (ÉTS). Before joining LIVIA, I was a research intern at Mila-Quebec AI Institute under the supervision of Prof. Samira Ebrahimi Kahou.<br/><br/>
+    description: "Welcome to my website! I am a lecturer of mathematics and computer sciences at the Faculty of Mathematical Sciences and Informatics, University of Khartoum. Previously, I worked as an AI resident at Meta AI, where I was a member of the Modern Recommendation System team under supervision of Dr. Vassilis Plachouras. Prior to that, I collaborated as an AI research associate with LIVIA, École de technologie supérieure (ÉTS). Before joining LIVIA, I was a research intern at Mila-Quebec AI Institute under the supervision of Prof. Samira Ebrahimi Kahou.<br/><br/>
            My broad interest lies in the development of intelligent machine systems. Presently, my focus is directed towards exploring the theory and practical applications of self-supervised learning within the context of graphs and Graph Neural Networks (GNNs)."
     author: Abdalgader Abubaker
     googleAnalyticsID: "G-C5ZXKY6GY"
@@ -54,10 +54,15 @@ params:
     UseHugoToc: true
     comments: false
     math: true
+
     profileMode:
           enabled: true
+          imageUrl2: "/in_the_name_of_Allah.png"
+          imageWidth2: 160
+          imageHeight2: 160
+          imageTitle2: In the name of Allah
           title: Abdalgader Abubaker
-          subtitle: "Welcome to my webpage! I am a lecturer of mathematics and computer sciences at the Faculty of Mathematical Sciences and Informatics, University of Khartoum. Previously, I worked as an AI resident at Meta AI, where I was a member of the Modern Recommendation System team under supervision of Dr. Vassilis Plachouras. Prior to that, I collaborated as an AI research associate with LIVIA, École de technologie supérieure (ÉTS). Before joining LIVIA, I was a research intern at Mila-Quebec AI Institute under the supervision of Prof. Samira Ebrahimi Kahou.<br/><br/>
+          subtitle: "Welcome to my website! I am a lecturer of mathematics and computer sciences at the Faculty of Mathematical Sciences and Informatics, University of Khartoum. Previously, I worked as an AI resident at Meta AI, where I was a member of the Modern Recommendation System team under supervision of Dr. Vassilis Plachouras. Prior to that, I collaborated as an AI research associate with LIVIA, École de technologie supérieure (ÉTS). Before joining LIVIA, I was a research intern at Mila-Quebec AI Institute under the supervision of Prof. Samira Ebrahimi Kahou.<br/><br/>
            My broad interest lies in the development of intelligent machine systems. Presently, my focus is directed towards exploring the theory and practical applications of self-supervised learning within the context of graphs and Graph Neural Networks (GNNs)."
           imageUrl: "/picture.jpeg"
           imageWidth: 160

@@ -3,6 +3,9 @@
     <div class="profile_inner">
         {{- if .imageUrl -}}
         {{- $img := "" }}
+        {{- if not (urls.Parse .imageUrl2).IsAbs }}
+            {{- $img = resources.Get .imageUrl2 }}
+        {{- end }}
         {{- if not (urls.Parse .imageUrl).IsAbs }}
             {{- $img = resources.Get .imageUrl }}
         {{- end }}
@@ -23,9 +26,14 @@
                     {{- $img = $img.Resize "150x150" }}
                 {{- end }}
             {{- end }}
+            <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle2 | default "head image"}}" title="{{ .imageTitle2 }}"
+                height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+
             <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
                 height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
         {{- else }}
+        <img draggable="false" src="{{ .imageUrl2 | absURL }}" alt="{{ .imageTitle | default "head image" }}" title="{{ .imageTitle2 }}"
+            height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
         <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
             height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
         {{- end }}
