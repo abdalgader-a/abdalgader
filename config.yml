@@ -37,7 +37,7 @@ params:
     googleAnalyticsID: "G-C5ZXKY6GY"
     DateFormat: "August 2023"
     defaultTheme: light
-    hideFooter: true
+    hideFooter: false
     disableThemeToggle: true
     ShowShareButtons: false
     ShowReadingTime: false
@@ -54,10 +54,12 @@ params:
     UseHugoToc: true
     comments: false
     math: true
-    imageUrl2: "/in_the_name_of_Allah.png"
-    imageWidth2: 160
-    imageHeight2: 160
-    imageTitle2: In the name of Allah
+    coverImageMode:
+          enabled: true
+          imageUrl: "/in_the_name_of_Allah.png"
+          imageWidth: 180
+          imageHeight: 180
+          imageTitle: In the name of Allah
     profileMode:
           enabled: true
           title: Abdalgader Abubaker
