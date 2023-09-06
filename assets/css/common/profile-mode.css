@@ -9,7 +9,7 @@
 }
 .main .profile {
     align-items: end;
-    min-height: calc(100vh - var(--header-height) - var(--footer-height) - (var(--gap) * 2));
+    min-height: calc(100vh - var(--header-height) - var(--footer-height) - (var(--gap) * 5));
     font-size: var(--homesize);
     line-height: var(--lineheight);
 }
