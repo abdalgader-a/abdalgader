@@ -1,11 +1,11 @@
 :root {
     --gap: 24px;
-    --content-gap: 20px;
+    --content-gap: 15px;
     --nav-width: 1024px;
-    --main-width: 720px;
-    --header-height: 44px;
-    --footer-height: 70px;
-    --radius: 8px;
+    --main-width: 730px;
+    --header-height: 34px;
+    --footer-height: 60px;
+    --radius: 9px;
     --theme: rgb(255, 255, 255);
     --entry: rgb(255, 255, 255);
     --primary: rgb(30, 30, 30);
