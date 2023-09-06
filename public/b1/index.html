@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>An Introduction to Graph Neural Networks | Abdalgader Abubaker</title>
+<meta name="keywords" content="Graphs, neural networks, message passing">
+<meta name="description" content="This blog will present an introduction to Graph Neural Networks.">
+<meta name="author" content="Abdalgader Abubaker">
+<link rel="canonical" href="https://abdalgader.com/b1/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.c2d92e26b63b12cd5063e1975cc4b91ecbeaff701976ba6e4534a183551e47c2.css" integrity="sha256-wtkuJrY7Es1QY&#43;GXXMS5Hsvq/3AZdrpuRTShg1UeR8I=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://abdalgader.com/favicon.ico">
+<link rel="apple-touch-icon" href="https://abdalgader.com/apple-touch-icon.png">
+
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Unemployment" />
+<meta property="og:description" content="This blog will present an introduction to Graph Neural Networks." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://abdalgader.com/b1/" />
+<meta property="og:image" content="https://abdalgader.com/b1.png" /><meta property="article:section" content="blogs" />
+<meta property="article:published_time" content="2023-10-1T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-10-1T00:00:00+00:00" />
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blogs",
+      "item": "https://abdalgader.com/blogs/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "An Introduction to Graph Neural Networks",
+      "item": "https://abdalgader.com/b1/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "An Introduction to Graph Neural Networks",
+  "name": "An Introduction to Graph Neural Networks",
+  "description": "This blog will present an introduction to Graph Neural Networks.",
+  "keywords": [
+    "Graphs", "neural networks", "message passing"
+  ],
+  "articleBody": "To Be Added",
+  "wordCount" : "3",
+  "inLanguage": "en",
+  "image":"https://abdalgader.com/b1.png","datePublished": "2023-10-1T00:00:00Z",
+  "dateModified": "2023-10-1T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Abdalgader Abubaker"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://abdalgader.com/b1/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Abdalgader Abubaker",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://abdalgader.com/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C5ZXKY6GY6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C5ZXKY6GY6');
+</script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://abdalgader.com/" accesskey="h" title="Abdalgader Abubaker">
+             
+                <img src="https://abdalgader.com/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Abdalgader Abubaker</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://abdalgader.com/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://abdalgader.com/blogs/" title="Blogs">
+                    <span>Blogs</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://abdalgader.com/cv/" title="Curriculum Vitae">
+                    <span>Curriculum Vitae</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://abdalgader.com/contact/" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      An Introduction to Graph Neural Networks
+    </h1>
+
+    
+    <div class="post-meta"><span title='2023-10-1 00:00:00 +0000 UTC'>October 2023</span>&nbsp;&middot;&nbsp;Abdalgader Abubaker&nbsp;&middot;
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+
+  </ul>
+</nav>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<p>TO BE ADDED SOON</p>
+  </div>
+
+</article>
+    </main>
+    
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

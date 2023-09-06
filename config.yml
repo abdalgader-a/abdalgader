@@ -1,0 +1,114 @@
+baseURL: "/Users/abdalgader/Desktop/Github/abdalgader"
+title: Abdalgader Abubaker
+paginate: 20
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+
+social:
+    twitter: @AbdalgaderAAH
+
+taxonomies:
+    tag: tags
+
+menu:
+    main:
+        - name: Papers
+          url: /papers/
+          weight: 1
+        - name: Blogs
+          url: /blogs/
+          weight: 2
+        - name: Curriculum Vitae
+          url: /cv/
+          weight: 3
+        - name: Contact
+          url: /contact/
+          weight: 4
+        - name: Search
+          url: /search/
+          weight: 6
+
+
+
+
+params:
+    description: "I am a lecturer of mathematics and computer sciences at Faculty of Mathematical Sciences and Informatics, University of Khartoum. Previously, I worked as AI resident at Meta AI, where I was a member of the Modern Recommendation System team under supervision of Dr. Vassilis Plachouras.  Prior to that, I collaborated as an AI research associate with LIVIA, École de technologie supérieure (ÉTS). Before joining LIVIA, I was a research intern at Mila-Quebec AI Institute under supervision of Prof. Samira Ebrahimi Kahou."
+    author: Abdalgader Abubaker
+    googleAnalyticsID: "N/A"
+    DateFormat: "July 2023"
+    defaultTheme: light
+    hideFooter: true
+    disableThemeToggle: true
+    ShowShareButtons: false
+    ShowReadingTime: false
+    disableSpecial1stPost: true
+    disableAnchoredHeadings: true
+    ShowPostNavLinks: false
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: true
+    ShowRssButtonInSectionTermList: false
+    ShowToc: false
+    disableScrollToTop: true
+    TocOpen: true
+    ShowWordCount: false
+    UseHugoToc: true
+    comments: false
+    math: true
+    profileMode:
+          enabled: true
+          title: Abdalgader Abubaker
+          subtitle: "Abdalgader is a Lecturer of Mathematics and Computer Sciences at the University of Khartoum. They have industry experience as an AI resident at Meta and research assistant roles at Mila and LIVIA. Their research interest lies in graph representation learning and its applications."
+          imageUrl: "/picture.jpeg"
+          imageWidth: 160
+          imageHeight: 160
+          imageTitle: Abdalgader Abubaker
+          buttons:
+            - name: Papers
+              url: /papers/
+            - name: Blogs
+              url: /blogs/
+            - name: Curriculum Vitae
+              url: /cv/
+            - name: Contact
+              url: /contact/
+    socialIcons:
+        - name: CV
+          url: /cv.pdf
+        - name: Email
+          url: /contact/
+        - name: Location
+          url: /location/
+        - name: Google Scholar
+          url: https://scholar.google.com/citations?user=FIBGf3sAAAAJ&hl=en&authuser=2
+        - name: GitHub
+          url: https://github.com/abdalgader-a
+
+    assets:
+        disableHLJS: true
+        disableScrollBarStyle: true
+    cover:
+        hiddenInList: true
+        hiddenInSingle: true
+    label:
+      text: "Abdalgader Abubaker"
+      icon: /favicon.ico
+      iconHeight: 18
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        guessSyntax: true
+        style: xcode
+    tableOfContents:
+        endLevel: 2
+        ordered: false
+        startLevel: 2
+
+# max number of characters:
+# * title: 70
+# * description: 120–155
+# * summary: 265
