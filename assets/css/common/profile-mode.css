@@ -5,14 +5,13 @@
 }
 .main .head_image {
     align-items: center;
-    padding-left: 1em;
+    padding-left: 20px;
 }
 .main .profile {
     align-items: end;
     min-height: calc(100vh - var(--header-height) - var(--footer-height) - (var(--gap) * 2));
     font-size: var(--homesize);
     line-height: var(--lineheight);
-    text-align: justify;
 }
 
 .profile .profile_inner h1 {
