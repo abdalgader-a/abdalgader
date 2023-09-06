@@ -23,11 +23,11 @@
                 {{- end }}
             {{- end }}
 
-            <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default "head image" }}" title="{{ .imageTitle }}"
-                height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+            <img draggable="false" src="{{ $img.Permalink }}" class="center" alt="{{ .imageTitle | default "head image" }}" title="{{ .imageTitle }}"
+                height="{{ .imageHeight | default 140 }}" width="{{ .imageWidth | default 140 }}" />
         {{- else }}
-        <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "head image" }}" title="{{ .imageTitle }}"
-            height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+        <img draggable="false" src="{{ .imageUrl | absURL }}" class="center" alt="{{ .imageTitle | default "head image" }}" title="{{ .imageTitle }}"
+            height="{{ .imageHeight | default 140 }}" width="{{ .imageWidth | default 140 }}" />
         {{- end }}
         {{- end }}
     {{- end }}

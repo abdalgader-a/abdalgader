@@ -57,8 +57,8 @@ params:
     coverImageMode:
           enabled: true
           imageUrl: "/in_the_name_of_Allah.png"
-          imageWidth: 180
-          imageHeight: 180
+          imageWidth: 140
+          imageHeight: 140
           imageTitle: In the name of Allah
     profileMode:
           enabled: true
