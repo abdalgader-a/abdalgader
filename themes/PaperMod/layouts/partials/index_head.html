@@ -19,7 +19,7 @@
                 {{ else if .imageWidth }}
                     {{- $img = $img.Resize (printf "%dx" .imageWidth) }}
                 {{ else }}
-                    {{- $img = $img.Resize "150x150" }}
+                    {{- $img = $img.Resize "140x140" }}
                 {{- end }}
             {{- end }}
 
