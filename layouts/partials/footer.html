@@ -1,9 +1,12 @@
 {{- if not (.Param "hideFooter") }}
 <footer class="footer">
-<!--     {{- if site.Copyright }}
+    {{- if site.Copyright }}
     <span>{{ site.Copyright | markdownify }}</span>
-    {{- else }} -->
-    <span><a href="mailto:pascalmichaillat@brown.edu">Contact by email</a>&ensp;&middot;&ensp;<a href="https://pmichaillat.substack.com">Subscribe to newsletter</a></span>
+    {{- else }}
+    <span>
+        <a href="/contact/">Contact by email</a>&ensp;&middot;&ensp;
+<!--        <a href="https://pmichaillat.substack.com">Subscribe to newsletter</a>-->
+    </span>
     <!-- by <a href="{{ "" | absLangURL }}">{{ site.Title }} -->
     <!-- &middot; {{ now.Month }} {{ now.Year }} -->
     <!-- {{- end }} -->

@@ -1,10 +1,8 @@
 {{- if not (.Param "hideFooter") }}
-<footer class="footer">
+<footer class="page__footer">
     {{- if site.Copyright }}
     <span>{{ site.Copyright | markdownify }}</span>
     {{- else }}
-    <span>&copy; {{ now.Year }} <a href="{{https://abdalgader.com""| absLangURL }}">{{ site.Title }}</a></span>
-    {{- end }}
 </footer>
 {{- end }}
 
