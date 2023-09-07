@@ -1,7 +1,7 @@
 ---
 title: "Curriculum Vitae" 
-date: 2023-01-13
-url: /cv/
+date: August 2023
+url: /cv/index.html
 author: "Abdalgader Abubaker"
 description: "Overview of Curriculum Vitae" 
 summary: ""

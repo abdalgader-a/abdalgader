@@ -1,7 +1,7 @@
 ---
-title: "Location"
+title: "Contact"
 aliases:
-    - /location.html
+    - /contact.html
 hidemeta: true
 description: "My mailing and office addresses at the University of California, Santa Cruz."
 
@@ -10,6 +10,8 @@ description: "My mailing and office addresses at the University of California, S
 ---
 
 #### Emails
+<li> abdalgader.a.a.hassan@gmail.com</li>
+<li> abdalgader.hassan@uofk.edu (not active)</li>
 
 
 ---
