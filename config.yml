@@ -64,7 +64,7 @@ params:
     math: true
     coverImageMode:
           enabled: true
-          imageUrl: "/in_the_name_of_Allah.png"
+          imageUrl: "/in_the_name_of_Allah.jpeg"
           imageWidth: 170
           imageHeight: 50
           imageTitle: In the name of Allah
@@ -105,6 +105,8 @@ params:
           url: https://scholar.google.com/citations?user=FIBGf3sAAAAJ&hl=en&authuser=2
         - name: GitHub
           url: https://github.com/abdalgader-a
+
+
 
     assets:
         disableHLJS: true
