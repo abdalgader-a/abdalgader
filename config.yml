@@ -67,12 +67,12 @@ params:
   profileMode:
     enabled: true
     title: Abdalgader Abubaker
-    subtitle: "Welcome to my website! I am a lecturer of mathematics and computer sciences at the Faculty of Mathematical
+    subtitle: "Welcome to my website! I am a Machine Learning Research Engineer at <a href=\"https://kera.health/\" target=\"_blank\" style=\"color:#8e7bd0\">Kera Health Platform</a> startup. Also, I am a lecturer of mathematics and computer sciences at the Faculty of Mathematical
                 Sciences and Informatics, University of Khartoum. Previously, I worked as an AI resident at
                 <a href=\"https://ai.meta.com/\" target=\"_blank\" style=\"color:#8e7bd0\">Meta AI</a>, where I was a member of the Modern Recommendation
                 System team under supervision of <a href=\"https://scholar.google.com/citations?user=DLx8WAYAAAAJ&hl=en\" target=\"_blank\" style=\"color:#8e7bd0\">Dr. Vassilis Plachouras</a>.  Prior to that, I collaborated as an AI
                 research associate with <a href=\"https://liviamtl.ca/\" target=\"_blank\" style=\"color:#8e7bd0\">LIVIA, École de Technologie Supérieure (ÉTS)</a>. Before joining LIVIA, I was a
-                research intern at <a href=\"https://mila.quebec/en/\" target=\"_blank\" style=\"color:#8e7bd0\">Mila-Quebec AI Institute</a> under the supervision of <a href=\"https://saebrahimi.github.io/\" target=\"_blank\" style=\"color:#8e7bd0\">Prof. Samira Ebrahimi Kahou</a> and <a href=\"https://rl.cs.mcgill.ca/people/doina-precup/\" target=\"_blank\" style=\"color:#8e7bd0\">Prof. Doina</a>.
+                research intern at <a href=\"https://mila.quebec/en/\" target=\"_blank\" style=\"color:#8e7bd0\">Mila-Quebec AI Institute</a> under the supervision of <a href=\"https://saebrahimi.github.io/\" target=\"_blank\" style=\"color:#8e7bd0\">Prof. Samira Ebrahimi Kahou</a> and <a href=\"https://rl.cs.mcgill.ca/people/doina-precup/\" target=\"_blank\" style=\"color:#8e7bd0\">Prof. Doina Precup</a>.
                 <br/><br/>
                 My broad research interests drives toward the development of intelligent machine systems. Presently, my focus is directed
                 towards exploring the theory and practical applications of self-supervised learning within the context
