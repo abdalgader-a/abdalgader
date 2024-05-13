@@ -11,15 +11,13 @@ description: "My mailing and office addresses at the University of California, S
 
 #### Mailing address
 
-Ammar bin Yasir Street
-Al Qasimia
-Sharjah, UAE
+Abu Dhabi, United Arab Emirates
 
 ---
 
 #### Office address
 
-Dakar, Senegal
+Abu Dhabi, United Arab Emirates
 
 <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjcCvgQGSjhYR8BzB1GDWKy0&key=AIzaSyCO5XBrtOKUg0lhDQPAdFikXFkQJFPEGw0&q=FacultyofMathematical+"></iframe>
 
