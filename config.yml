@@ -62,15 +62,14 @@ params:
   profileMode:
     enabled: true
     title: Abdalgader Abubaker
-    subtitle: "Welcome to my website! I am currently a Senior AI Engineer at <a href=\"https://www.tii.ae/\" target=\"_blank\" style=\"color:#8e7bd0\">Technology Innovation Institute (TII)</a>. Before joining TII, I hold the same role at <a href=\"https://kera.health/\" target=\"_blank\" style=\"color:#8e7bd0\">Kera Health Platform</a> startup. Previously, I worked as an AI resident at
-                <a href=\"https://ai.meta.com/\" target=\"_blank\" style=\"color:#8e7bd0\">Meta AI</a>, where I was a member of the Modern Recommendation
-                System team under supervision of <a href=\"https://scholar.google.com/citations?user=DLx8WAYAAAAJ&hl=en\" target=\"_blank\" style=\"color:#8e7bd0\">Dr. Vassilis Plachouras</a>.  Prior to that, I collaborated as an AI
-                research associate with <a href=\"https://liviamtl.ca/\" target=\"_blank\" style=\"color:#8e7bd0\">LIVIA, École de Technologie Supérieure (ÉTS)</a>. Before joining LIVIA, I was a
-                research intern at <a href=\"https://mila.quebec/en/\" target=\"_blank\" style=\"color:#8e7bd0\">Mila-Quebec AI Institute</a> under the supervision of <a href=\"https://saebrahimi.github.io/\" target=\"_blank\" style=\"color:#8e7bd0\">Prof. Samira Ebrahimi Kahou</a> and <a href=\"https://rl.cs.mcgill.ca/people/doina-precup/\" target=\"_blank\" style=\"color:#8e7bd0\">Prof. Doina Precup</a>. Also, I was a lecturer of mathematics and computer sciences at the Faculty of Mathematical
-                Sciences and Informatics, University of Khartoum.
+    subtitle: "Welcome to my website! I am currently a Senior AI Engineer at <a href=\"https://www.tii.ae/\" target=\"_blank\" style=\"color:#8e7bd0\">Technology Innovation Institute (TII)</a>. Before joining TII, I hold the same role at <a href=\"https://kera.health/\" target=\"_blank\" style=\"color:#8e7bd0\">Kera Health Platform</a> startup. Previously, I worked as an AI resident for
+                <a href=\"https://ai.meta.com/\" target=\"_blank\" style=\"color:#8e7bd0\">Meta AI</a>, where I was a part of the Modern Recommendation
+                System team under supervision of <a href=\"https://scholar.google.com/citations?user=DLx8WAYAAAAJ&hl=en\" target=\"_blank\" style=\"color:#8e7bd0\">Dr. Vassilis Plachouras</a>,  and I worked as ML
+                research associate at <a href=\"https://liviamtl.ca/\" target=\"_blank\" style=\"color:#8e7bd0\">LIVIA, École de Technologie Supérieure (ÉTS)</a>. During my MSc, I intered at
+                <a href=\"https://mila.quebec/en/\" target=\"_blank\" style=\"color:#8e7bd0\">Mila-Quebec AI Institute</a> under the supervision of <a href=\"https://saebrahimi.github.io/\" target=\"_blank\" style=\"color:#8e7bd0\">Prof. Samira Ebrahimi Kahou</a> and <a href=\"https://rl.cs.mcgill.ca/people/doina-precup/\" target=\"_blank\" style=\"color:#8e7bd0\">Prof. Doina Precup</a>. Besides, I'm affilated lecturer at Pure Mathematics Department, University of Khartoum.
                 <br/><br/>
-                My broad research interests drives toward the development of intelligent machine systems. Presently, my focus is directed
-                towards exploring the theory and practical applications of self-supervised learning within the context
+                My broad research interests drives toward the development of intelligent machine systems and generative AI. Previously, I was focusing
+                towards the theory and practical applications of self-supervised learning on the context
                 of graphs and Graph Neural Networks (GNNs)."
     imageUrl: "/picture.jpeg"
     imageWidth: 160
