@@ -32,7 +32,7 @@ menu:
 
 params:
   author: Abdalgader Abubaker
-  googleAnalyticsID: "G-C5ZXKY6GY"
+  googleAnalyticsID: "G-C5ZXKY6GY6"
   DateFormat: "August 2023"
   defaultTheme: light
   hideFooter: false
@@ -62,7 +62,7 @@ params:
   profileMode:
     enabled: true
     title: Abdalgader Abubaker
-    subtitle: "Welcome to my website! I am currently a Senior AI Engineer at <a href=\"https://www.tii.ae/\" target=\"_blank\" style=\"color:#8e7bd0\">Technology Innovation Institute (TII)</a>. Before joining TII, I hold the same role at <a href=\"https://kera.health/\" target=\"_blank\" style=\"color:#8e7bd0\">Kera Health Platform</a> startup. Previously, I worked as an AI resident for
+    subtitle: "Welcome to my webpage! I am currently a Senior AI Engineer at <a href=\"https://www.tii.ae/\" target=\"_blank\" style=\"color:#8e7bd0\">Technology Innovation Institute (TII)</a>. Before joining TII, I hold the same role at <a href=\"https://kera.health/\" target=\"_blank\" style=\"color:#8e7bd0\">Kera Health Platform</a> startup. Previously, I worked as an AI resident for
                 <a href=\"https://ai.meta.com/\" target=\"_blank\" style=\"color:#8e7bd0\">Meta AI</a>, where I was a part of the Modern Recommendation
                 System team under supervision of <a href=\"https://scholar.google.com/citations?user=DLx8WAYAAAAJ&hl=en\" target=\"_blank\" style=\"color:#8e7bd0\">Dr. Vassilis Plachouras</a>,  and I worked as ML
                 research associate at <a href=\"https://liviamtl.ca/\" target=\"_blank\" style=\"color:#8e7bd0\">LIVIA, École de Technologie Supérieure (ÉTS)</a>. During my MSc, I intered at
